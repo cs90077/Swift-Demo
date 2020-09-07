@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>使用照片儲存功能，請允許使用相簿權限。</string>
 	<key>NSCameraUsageDescription</key>
 	<string>使用拍照功能，請允許使用相機</string>
 	<key>CFBundleExecutable</key>

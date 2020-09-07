@@ -109,12 +109,28 @@
                                                     <action selector="openCameraPressedWithSender:" destination="fVz-Gb-48y" eventType="touchUpInside" id="Ueo-QQ-mLr"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7X-bz-qPd">
+                                                <rect key="frame" x="16" y="195" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="WOh-Hy-CXR"/>
+                                                    <constraint firstAttribute="height" constant="80" id="y7O-72-quV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Save image to photos"/>
+                                                <connections>
+                                                    <action selector="saveImagePressedWithSender:" destination="fVz-Gb-48y" eventType="touchUpInside" id="abS-yC-qeS"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Lv0-C6-ryK" secondAttribute="trailing" constant="16" id="1SO-t6-Pxv"/>
+                                            <constraint firstItem="p7X-bz-qPd" firstAttribute="leading" secondItem="iFn-86-rIl" secondAttribute="leading" constant="16" id="4iX-E3-iC5"/>
                                             <constraint firstAttribute="bottom" secondItem="Lv0-C6-ryK" secondAttribute="bottom" constant="16" id="Tt3-1e-Pwv"/>
+                                            <constraint firstAttribute="trailing" secondItem="p7X-bz-qPd" secondAttribute="trailing" constant="16" id="UDX-X0-YRh"/>
                                             <constraint firstItem="Lv0-C6-ryK" firstAttribute="leading" secondItem="iFn-86-rIl" secondAttribute="leading" constant="16" id="amN-7t-UQY"/>
+                                            <constraint firstItem="Lv0-C6-ryK" firstAttribute="top" secondItem="p7X-bz-qPd" secondAttribute="bottom" constant="16" id="y0e-R1-s7q"/>
                                         </constraints>
                                     </view>
                                 </subviews>

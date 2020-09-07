@@ -25,6 +25,10 @@ class OpenCameraViewController: UIViewController {
         openCamera()
     }
 
+    @IBAction func saveImagePressed(sender:UIButton) {
+        saveImageToPhotos()
+    }
+
 }
 
 extension OpenCameraViewController {
@@ -35,6 +39,17 @@ extension OpenCameraViewController {
         pickerController.mediaTypes = ["public.image"]
         pickerController.sourceType = .camera
         self.present(pickerController, animated: true, completion: nil)
+    }
+
+    func saveImageToPhotos() {
+        // save
+        UIImageWriteToSavedPhotosAlbum(mainImage, imageSaveSuccess(), nil, nil)
+    }
+
+    @objc func imageSaveSuccess() {
+        let alert = UIAlertController(title: "相片儲存", message: "成功", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "確認", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
 }
